@@ -1,0 +1,15 @@
+<h1>Game#score</h1>
+<p>Your word: <%= @word %> </p>
+
+<p>Time taken to answer: <%= @total_time %> seconds</p>
+
+<p>Your score: <%= @compute_score.first %></p>
+
+<p> <%= @compute_score.last.capitalize %></p>
+
+<%= link_to "Play again", game_path %>
+
+<!-- Your word: ax
+Time Taken to answer: 9.664008
+Your score: 1.6778664
+Message: well done -->

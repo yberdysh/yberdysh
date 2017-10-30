@@ -1,0 +1,16 @@
+<h1>Game#game</h1>
+<p>Let's play a game!</p>
+<p>Please type the longest word you can find among these letters!</p>
+
+<p class = "grid"><%= @grid %> </>
+
+<p> <%= @start_time %> </p>
+
+<h3>Type your answer when ready!</h3>
+<form action="/score" method="get">
+  <label for="word"></label>
+  <input type="text" id="word" name="longest_word" placeholder="your answer...">
+  <input type="hidden" id="start_time" name="start_time" value= "<%= @start_time %>">
+  <input type="hidden" id="grid" name="grid" value= "<%= @grid %>">
+  <input type="submit">
+</form>
